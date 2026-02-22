@@ -15,5 +15,13 @@
     Store your answer in d
     print your final answer
     */
+
+   d = a[0] * b[0];
+   for (int i=1;i<(sizeof(a)/sizeof(*a));i++) {
+      d = d + (a[i] * b[i]);
+   }
+
+   printf("d = %f\n", d);
+
     return 0;
  }

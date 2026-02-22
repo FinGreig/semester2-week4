@@ -13,3 +13,15 @@
  6. print the answer appropriately as pointer, character and string
  */ 
 
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char str[] = "The quick brown fox jumped over the lazy dog";
+    char substr[] = "ump";
+
+    char *result = strstr(str,substr);
+    printf("Substring found at index %ld\n",result-str);
+    printf("%c\n",str[result-str]);
+    printf("%s\n",result);
+}
